@@ -807,7 +807,7 @@ case 5:
 YY_RULE_SETUP
 #line 22 "try.lex"
 { create_and_store_token(COLON,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type COLON , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type COLON , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -815,7 +815,7 @@ case 6:
 YY_RULE_SETUP
 #line 26 "try.lex"
 { create_and_store_token(SEMICOLON,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type SEMICOLON , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type SEMICOLON , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -823,7 +823,7 @@ case 7:
 YY_RULE_SETUP
 #line 30 "try.lex"
 { create_and_store_token(PARENTHESES_OPEN,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type PARENTHESES_OPEN , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type PARENTHESES_OPEN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -831,7 +831,7 @@ case 8:
 YY_RULE_SETUP
 #line 34 "try.lex"
 { create_and_store_token(PARENTHESES_CLOSE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type PARENTHESES_CLOSE , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type PARENTHESES_CLOSE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -839,7 +839,7 @@ case 9:
 YY_RULE_SETUP
 #line 38 "try.lex"
 { create_and_store_token(BRACKETS_OPEN,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type BRACKETS_OPEN , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type BRACKETS_OPEN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -847,7 +847,7 @@ case 10:
 YY_RULE_SETUP
 #line 42 "try.lex"
 { create_and_store_token(BRACKETS_CLOSE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type BRACKETS_CLOSE , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type BRACKETS_CLOSE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -855,7 +855,7 @@ case 11:
 YY_RULE_SETUP
 #line 46 "try.lex"
 { create_and_store_token(CURLY_BRACES_OPEN,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type CURLY_BRACES_OPEN , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type CURLY_BRACES_OPEN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -863,7 +863,7 @@ case 12:
 YY_RULE_SETUP
 #line 50 "try.lex"
 { create_and_store_token(CURLY_BRACES_CLOSE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type CURLY_BRACES_CLOSE , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type CURLY_BRACES_CLOSE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -871,7 +871,7 @@ case 13:
 YY_RULE_SETUP
 #line 54 "try.lex"
 { create_and_store_token(KEYWORD_INT,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_INT , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type KEYWORD_INT , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -879,7 +879,7 @@ case 14:
 YY_RULE_SETUP
 #line 58 "try.lex"
 { create_and_store_token(KEYWORD_FLOAT,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_FLOAT , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type KEYWORD_FLOAT , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -887,7 +887,7 @@ case 15:
 YY_RULE_SETUP
 #line 62 "try.lex"
 { create_and_store_token(KEYWORD_VOID,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_VOID , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type KEYWORD_VOID , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -895,7 +895,7 @@ case 16:
 YY_RULE_SETUP
 #line 66 "try.lex"
 { create_and_store_token(KEYWORD_IF,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_IF , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type KEYWORD_IF , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -903,7 +903,7 @@ case 17:
 YY_RULE_SETUP
 #line 70 "try.lex"
 { create_and_store_token(KEYWORD_RETURN,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_RETURN , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type KEYWORD_RETURN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }		  
 	YY_BREAK
@@ -911,7 +911,7 @@ case 18:
 YY_RULE_SETUP
 #line 74 "try.lex"
 { create_and_store_token(INT_NUM,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type INT_NUM , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type INT_NUM , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -919,7 +919,7 @@ case 19:
 YY_RULE_SETUP
 #line 78 "try.lex"
 { create_and_store_token(FLOAT_NUM,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type FLOAT_NUM , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type FLOAT_NUM , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }	
 	YY_BREAK
@@ -927,7 +927,7 @@ case 20:
 YY_RULE_SETUP
 #line 82 "try.lex"
 { create_and_store_token(AR_OP_PLUS,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type AR_OP_PLUS , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type AR_OP_PLUS , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -935,7 +935,7 @@ case 21:
 YY_RULE_SETUP
 #line 86 "try.lex"
 { create_and_store_token(AR_OP_MULTIPLICATION,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type AR_OP_MULTIPLICATION , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type AR_OP_MULTIPLICATION , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -943,7 +943,7 @@ case 22:
 YY_RULE_SETUP
 #line 90 "try.lex"
 { create_and_store_token(REL_OP_LE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_LE , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type REL_OP_LE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -951,7 +951,7 @@ case 23:
 YY_RULE_SETUP
 #line 94 "try.lex"
 { create_and_store_token(REL_OP_L,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_L , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type REL_OP_L , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -959,7 +959,7 @@ case 24:
 YY_RULE_SETUP
 #line 98 "try.lex"
 { create_and_store_token(REL_OP_GE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_GE , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type REL_OP_GE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -967,7 +967,7 @@ case 25:
 YY_RULE_SETUP
 #line 102 "try.lex"
 { create_and_store_token(REL_OP_G,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_G , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type REL_OP_G , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -975,7 +975,7 @@ case 26:
 YY_RULE_SETUP
 #line 106 "try.lex"
 { create_and_store_token(REL_OP_E,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_E , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type REL_OP_E , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -983,7 +983,7 @@ case 27:
 YY_RULE_SETUP
 #line 110 "try.lex"
 { create_and_store_token(REL_OP_NE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_NE , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type REL_OP_NE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -991,7 +991,7 @@ case 28:
 YY_RULE_SETUP
 #line 114 "try.lex"
 { create_and_store_token(ASSIGNMENT_OP,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type ASSIGNMENT_OP , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type ASSIGNMENT_OP , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -999,7 +999,7 @@ case 29:
 YY_RULE_SETUP
 #line 118 "try.lex"
 { create_and_store_token(ID,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type ID , lexeme %s\n", line_num, yytext);  
+                       fprinf(yyout,"Line %d: found token of type ID , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -2021,21 +2021,22 @@ void yyfree (void * ptr )
 #line 124 "try.lex"
 
 
-void checkFile(char* inputFileName) {
+void checkFile1(char *inputFileName) {
 	//char* inputFileName = "c:\\temp\\test1.txt";
+
 	char* outputFileName = "c:\\temp\\test1_066524737_302788781_204072524_lex_output.txt";
 	// open file pointer for read
-	yyin = fopen(inputFileName, "r");
+	FILE *inputFilePtr = fopen(inputFileName, "r");
 	// open file for output
-	yyout = fopen(outputFileName, "w");
+	FILE *outputFilePtr = fopen(outputFileName, "w");
 	// check for file pointers
-	/*if (inputFilePtr != NULL)
+	if (inputFilePtr != NULL)
 	{
 		yyin = inputFilePtr;
 	}
 	else
 	{
-		printf("error loading file 1");
+		printf("error loading file1");
 	}
 	if (outputFileName != NULL)
 	{
@@ -2043,54 +2044,75 @@ void checkFile(char* inputFileName) {
 	}
 	else
 	{
-		printf("error loading file 1 for output");
-	}*/
-
-	// start lexing the file
-	while (yylex() != 0);
+		printf("error loading file1 for output");
+	}
 	
+	// start lexing the file
+	while (yyin != 0)
+	{
+		yylex();
+	}
 	// closing file pointers
-	//fclose(inputFilePtr);
-	//fclose(outputFilePtr);
+	fclose(inputFilePtr);
+	fclose(outputFilePtr);
 }
 
 
-int main(int argc, char** argv) {
-	//++argv, --argc;  /* skip over program name */
+int main(int argc, char **argv ){
+++argv, --argc;  /* skip over program name */
 
-	// get input from user
+// get input from user
 	int inputFromUser = 0;
 	do {
 		printf("Please enter your choise :  \n");
 		printf("-------------------------------\n");
-		printf("1. c:\\temp\\test1.txt          \n");
-		printf("2. c:\\temp\\test2.txt          \n");
-		printf("3. run both files             \n");
-		printf("4. exit                       \n");
+		printf("1 . c:\temp\test1.txt          \n");
+		printf("2 . c:\temp\test2.txt          \n");
+		printf("3 . run both files             \n");
+		printf("4 . exit                       \n");
 		printf("enter your choise :            \n");
 		scanf_s("%d", &inputFromUser);
-	} while ((inputFromUser > 4) && (inputFromUser < 0));
-
+	} while (inputFromUser == 0 || inputFromUser != 4);
+	
 	// check the user input
 	switch (inputFromUser) {
 	case 1: {
-		printf("start lexing file: c:\\temp\\test1.txt ..... please wait \n");
-		checkFile("c:\\temp\\test1.txt");
+		checkFile1("c:\\temp\\test1.txt");
 		break;
 	}
 	case 2: {
-		checkFile("c:\\temp\\test2.txt");
+		//checkFile2();
 		break;
 	}
 	case 3: {
-		checkFile("c:\\temp\\test1.txt");
-		checkFile("c:\\temp\\test2.txt");
+		//checkboth();
 		break;
 	}
 	case 4: {
 		exit(0);
 	}
-	}
-
 }
+
+
+
+
+//
+
+
+if ( argc > 0 )
+yyin = fopen( argv[0], "r" );
+else
+yyin = stdin;
+
+
+if ( argc > 1 )
+yyout = fopen( argv[1], "w" );
+else
+yyout = stdout;
+while (yyin != 0)
+{
+	yylex();
+}
+}
+
 
