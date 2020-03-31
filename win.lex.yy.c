@@ -2021,73 +2021,110 @@ void yyfree (void * ptr )
 #line 124 "try.lex"
 
 
-void checkFile(char* inputFileName) {
-	//char* inputFileName = "c:\\temp\\test1.txt";
-	char* outputFileName = "c:\\temp\\test1_066524737_302788781_204072524_lex_output.txt";
+int CheckFile(char* inputFileName) {
+	#define NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME  100
+	// build the output filename with the prefix of the input name
+	int i = 0, j = 0;
+	char* addition = "_066524737_302788781_204072524_lex_output.txt";
+	char outputFileName[NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME];
+	strcpy(outputFileName, inputFileName);
+	while (outputFileName[i] != '.') {
+		i++;
+	}
+	while (i < i + strlen(addition) && (i< NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME)) {
+		outputFileName[i++] = addition[j++];
+	}
+
 	// open file pointer for read
 	yyin = fopen(inputFileName, "r");
 	// open file for output
 	yyout = fopen(outputFileName, "w");
 	// check for file pointers
-	/*if (inputFilePtr != NULL)
+	if (yyin == NULL)
 	{
-		yyin = inputFilePtr;
+		printf("Error opening input file...");
+		return 0;
 	}
-	else
+	else if (yyout == NULL)
 	{
-		printf("error loading file 1");
+		printf("Error opening output file for writing...");
+		return 0;
 	}
-	if (outputFileName != NULL)
-	{
-		yyout = outputFileName;
-	}
-	else
-	{
-		printf("error loading file 1 for output");
-	}*/
-
 	// start lexing the file
 	while (yylex() != 0);
 	
 	// closing file pointers
-	//fclose(inputFilePtr);
-	//fclose(outputFilePtr);
+	fclose(yyin);
+	fclose(yyout);
+	return 1;
 }
-
-
-int main(int argc, char** argv) {
-	//++argv, --argc;  /* skip over program name */
-
-	// get input from user
+int PrintMenu() {
 	int inputFromUser = 0;
 	do {
-		printf("Please enter your choise :  \n");
+		printf("Please enter your choise :     \n");
 		printf("-------------------------------\n");
-		printf("1. c:\\temp\\test1.txt          \n");
-		printf("2. c:\\temp\\test2.txt          \n");
-		printf("3. run both files             \n");
-		printf("4. exit                       \n");
+		printf("1. c:\\temp\\test1.txt         \n");
+		printf("2. c:\\temp\\test2.txt         \n");
+		printf("3. run both files              \n");
+		printf("4. exit                        \n");
 		printf("enter your choise :            \n");
 		scanf_s("%d", &inputFromUser);
-	} while ((inputFromUser > 4) && (inputFromUser < 0));
+	} while ((inputFromUser > 4) || (inputFromUser < 0));
+	return inputFromUser;
+}
 
+int main(int argc, char** argv) {
+	// get input from user
+	int userInput = PrintMenu();
+	
 	// check the user input
-	switch (inputFromUser) {
+	switch (userInput) {
 	case 1: {
-		printf("start lexing file: c:\\temp\\test1.txt ..... please wait \n");
-		checkFile("c:\\temp\\test1.txt");
+		printf("Start lexing file: c:\\temp\\test1.txt ..... please wait \n");
+		if (CheckFile("c:\\temp\\test1.txt")) {
+			printf("The output file is ready, located in c:\\temp....\n");
+		}
+		else
+		{
+			printf("Problem lexing.... exit from program \n");
+		}
+		system("pause");
 		break;
 	}
 	case 2: {
-		checkFile("c:\\temp\\test2.txt");
+		printf("Start lexing file: c:\\temp\\test2.txt ..... please wait \n");
+		if (CheckFile("c:\\temp\\test2.txt")) {
+			printf("The output file is ready, located in c:\\temp.  \n");
+		}
+		else
+		{
+			printf("Problem lexing.... exit from program \n");
+		}
+		system("pause");
 		break;
 	}
 	case 3: {
-		checkFile("c:\\temp\\test1.txt");
-		checkFile("c:\\temp\\test2.txt");
+		printf("Start lexing file: c:\\temp\\test1.txt ..... please wait \n");
+		if (CheckFile("c:\\temp\\test1.txt")) {
+			printf("The output file is ready, located in c:\\temp....\n");
+		}
+		else
+		{
+			printf("Problem lexing test1.txt\n");
+		}
+		printf("Start lexing file: c:\\temp\\test2.txt ..... please wait \n");	
+		if (CheckFile("c:\\temp\\test2.txt")) {
+			printf("The output file is ready, located in c:\\temp.  \n");
+		}
+		else
+		{
+			printf("Problem lexing test2.txt\n");
+		}
+		system("pause");
 		break;
 	}
 	case 4: {
+		system("pause");
 		exit(0);
 	}
 	}
