@@ -1,0 +1,18 @@
+Students ids:
+1. 066524737
+2. 302788781
+3. 204072524
+
+Students names:
+1. Itay Cohen	
+2. Ahikam Partush
+3. Eyal Zafrani
+
+Operating system:
+Windows7 - 64Bit
+
+Development enviroment:
+Visual Studio 17
+
+Notes: none.
+
