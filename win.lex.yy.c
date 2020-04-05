@@ -807,88 +807,88 @@ YY_RULE_SETUP
 case 4:
 YY_RULE_SETUP
 #line 19 "try.lex"
-{ create_and_store_token(KEYWORD_INT,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_INT , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(KEY_INT,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type KEY_INT , lexeme %s\n", line_num, yytext);  
                        return 1;
  	   }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
 #line 23 "try.lex"
-{ create_and_store_token(KEYWORD_FLOAT,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_FLOAT , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(KEY_FLOAT,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type KEY_FLOAT , lexeme %s\n", line_num, yytext);  
                        return 1;
  	   }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
 #line 27 "try.lex"
-{ create_and_store_token(KEYWORD_VOID,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_VOID , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(KEY_VOID,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type KEY_VOID , lexeme %s\n", line_num, yytext);  
                        return 1;
  	   }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
 #line 31 "try.lex"
-{ create_and_store_token(KEYWORD_IF,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_IF , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(KEY_IF,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type KEY_IF , lexeme %s\n", line_num, yytext);  
                        return 1;
  	    }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
 #line 35 "try.lex"
-{ create_and_store_token(KEYWORD_RETURN,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type KEYWORD_RETURN , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(KEY_RETURN,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type KEY_RETURN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	    }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
 #line 39 "try.lex"
-{ create_and_store_token(INT_NUM,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type INT_NUM , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(INT_NUMBER,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type INT_NUMBER , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }		
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
 #line 43 "try.lex"
-{ create_and_store_token(INT_NUM,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type INT_NUM , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(INT_NUMBER,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type INT_NUMBER , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
 #line 47 "try.lex"
-{ create_and_store_token(FLOAT_NUM,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type FLOAT_NUM , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(FLOAT_NUMBER,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type FLOAT_NUMBER , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }	
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
 #line 51 "try.lex"
-{ create_and_store_token(COMMA,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type COMMA , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(COMMA_SIGN,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type COMMA_SIGN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
 #line 55 "try.lex"
-{ create_and_store_token(COLON,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type COLON , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(COLON_SIGN,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type COLON_SIGN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
 #line 59 "try.lex"
-{ create_and_store_token(SEMICOLON,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type SEMICOLON , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(SEMICOLON_SIGN,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type SEMICOLON_SIGN , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
@@ -943,79 +943,79 @@ YY_RULE_SETUP
 case 21:
 YY_RULE_SETUP
 #line 87 "try.lex"
-{ create_and_store_token(AR_OP_PLUS,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type AR_OP_PLUS , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(ARGUMENT_OPR_PLUS,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type ARGUMENT_OPR_PLUS , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
 #line 91 "try.lex"
-{ create_and_store_token(AR_OP_MULTIPLICATION,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type AR_OP_MULTIPLICATION , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(ARGUMENT_OPR_MULTIPLICATION,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type ARGUMENT_OPR_MULTIPLICATION , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
 #line 95 "try.lex"
-{ create_and_store_token(REL_OP_LE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_LE , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(OP_LE,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type OP_LE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
 #line 99 "try.lex"
-{ create_and_store_token(REL_OP_L,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_L , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(OP_L,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type OP_L , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
 #line 103 "try.lex"
-{ create_and_store_token(REL_OP_GE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_GE , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(OP_GE,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type OP_GE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
 #line 107 "try.lex"
-{ create_and_store_token(REL_OP_G,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_G , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(OP_G,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type OP_G , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
 #line 111 "try.lex"
-{ create_and_store_token(REL_OP_E,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_E , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(OP_E,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type OP_E , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
 #line 115 "try.lex"
-{ create_and_store_token(REL_OP_NE,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type REL_OP_NE , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(OP_NE,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type OP_NE , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
 #line 119 "try.lex"
-{ create_and_store_token(ASSIGNMENT_OP,  yytext, line_num); 
-                       fprintf(yyout,"Line %d : found token of type ASSIGNMENT_OP , lexeme %s\n", line_num, yytext);  
+{ create_and_store_token(EQUAL_OP,  yytext, line_num); 
+                       fprintf(yyout,"Line %d : found token of type EQUAL_OP , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
 #line 123 "try.lex"
-{ create_and_store_token(ID,  yytext, line_num); 
+{ create_and_store_token(OTHER_ID,  yytext, line_num); 
                        fprintf(yyout,"Line %d : found token of type ID , lexeme %s\n", line_num, yytext);  
                        return 1;
  	      }

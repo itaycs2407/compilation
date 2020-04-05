@@ -9,32 +9,33 @@ extern FILE *yyin, *yyout;
 
 typedef enum eTOKENS
 {
-	KEYWORD_INT,
-	KEYWORD_FLOAT,
-	KEYWORD_VOID,
-	KEYWORD_IF,
-	KEYWORD_RETURN,
-	INT_NUM,
-	FLOAT_NUM,
-	COMMA,
-	COLON,
-	SEMICOLON,
+	KEY_INT,
+	KEY_FLOAT,
+	KEY_VOID,
+	KEY_IF,
+	KEY_RETURN,
+	INT_NUMBER,
+	INT_NUMBER_Z,
+	FLOAT_NUMBER,
+	COMMA_SIGN,
+	COLON_SIGN,
+	SEMICOLON_SIGN,
 	PARENTHESES_OPEN,
 	PARENTHESES_CLOSE,
 	BRACKETS_OPEN,
 	BRACKETS_CLOSE,
 	CURLY_BRACES_OPEN,
 	CURLY_BRACES_CLOSE,
-	AR_OP_PLUS,
-	AR_OP_MULTIPLICATION,
-	REL_OP_LE,
-	REL_OP_L,
-	REL_OP_GE,
-	REL_OP_G,
-	REL_OP_E,
-	REL_OP_NE,
-	ASSIGNMENT_OP,
-	ID
+	ARGUMENT_OPR_PLUS,
+	ARGUMENT_OPR_MULTIPLICATION,
+	OP_LE,
+	OP_L,
+	OP_GE,
+	OP_G,
+	OP_E,
+	OP_NE,
+	EQUAL_OP,
+	OTHER_ID
 	/*
 		Examples of tokens, add/change according to your needs.
 		
@@ -43,14 +44,14 @@ typedef enum eTOKENS
 		#define TOKEN_IF 2
 		...........
 	*/
-}eTOKENS;
+} eTOKENS;
 
 typedef struct Token
 {
 	eTOKENS kind;
 	char *lexeme;
 	int lineNumber;
-}Token;
+} Token;
 
 typedef struct Node
 {
@@ -59,7 +60,7 @@ typedef struct Node
 	struct Node *next;
 } Node;
 
-void create_and_store_token(eTOKENS kind, char* lexeme, int numOfLine);
+void create_and_store_token(eTOKENS kind, char *lexeme, int numOfLine);
 Token *next_token();
 Token *back_token();
 

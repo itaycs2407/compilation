@@ -20,10 +20,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\win.lex.yy.c">
+    <ClCompile Include="..\..\..\Token.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Token.c">
+    <ClCompile Include="..\..\..\win.lex.yy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

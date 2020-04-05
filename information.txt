@@ -5,8 +5,8 @@ Students ids:
 
 Students names:
 1. Itay Cohen	
-2. Ahikam Partush
-3. Eyal Zafrani
+2. Eyal Zafrani
+3. Ahikam Partush
 
 Operating system:
 Windows7 - 64Bit
