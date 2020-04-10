@@ -1,3 +1,6 @@
-﻿  win.lex.yy.c
+﻿  Token.c
+  win.lex.yy.c
 try.lex(155): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  LINK : C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה1\proj1\Project1\Debug\Project1.exe not found or not built by the last incremental link; performing full link
   Project1.vcxproj -> C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה1\proj1\Project1\Debug\Project1.exe

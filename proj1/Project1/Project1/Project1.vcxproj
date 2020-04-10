@@ -19,14 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\flex\try.lex" />
+    <ClInclude Include="..\Token.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Token.c" />
-    <ClCompile Include="..\..\..\win.lex.yy.c" />
+    <Text Include="..\information.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Token.h" />
+    <None Include="..\try.lex" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Token.c" />
+    <ClCompile Include="..\win.lex.yy.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
