@@ -1,0 +1,7 @@
+﻿  Token.c
+  win.lex.yy.c
+try.lex(130): warning C4474: 'fprintf' : too many arguments passed for format string
+  try.lex(130): note: placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+try.lex(160): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Project1.vcxproj -> C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\סופי - אולי\Project1\Debug\Project1.exe
