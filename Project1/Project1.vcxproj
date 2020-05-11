@@ -23,6 +23,7 @@
     <ClInclude Include="Parsers.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Kompilazia-Grammer.docx" />
     <None Include="..\try.lex" />
   </ItemGroup>
   <ItemGroup>

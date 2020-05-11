@@ -1,0 +1,111 @@
+﻿  win.lex.yy.c
+try.lex(130,58): warning C4474: 'fprintf' : too many arguments passed for format string
+try.lex(130,58): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
+  Parsers.c
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.h(26,6): error C2061: syntax error: identifier 'isFollow'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.h(26,6): error C2059: syntax error: ';'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.h(26,18): error C2059: syntax error: '<parameter-list>'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(110,15): warning C4013: 'errorRecover' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(119,18): warning C4013: 'parse_DIM_SIZES_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(122,6): error C2371: 'parse_DIM_SIZES_': redefinition; different basic types
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(173,19): warning C4013: 'parse_PROTOTYPE' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(175,23): warning C4013: 'parse_FUNC_PREDEFS_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(178,8): error C2371: 'parse_FUNC_PREDEFS_': redefinition; different basic types
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(200,138): error C2146: syntax error: missing ')' before identifier 'current_token'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(200,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(200,20): message : placeholders and their parameters expect 5 variadic arguments, but 4 were provided
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(200,20): message : the missing variadic argument 5 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(200,163): error C2059: syntax error: ')'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(209,23): warning C4013: 'parse_RETURNED_TYPE' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(212,16): warning C4013: 'parse_PARAMS' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(218,24): warning C4013: 'parse_FUNC_WITH_BODY' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(219,25): warning C4013: 'parse_FUNC_FULL_DEFS_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(222,8): error C2371: 'parse_FUNC_WITH_BODY': redefinition; different basic types
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(224,19): warning C4013: 'parse_COMP_STMT' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(256,8): error C2371: 'parse_RETURNED_TYPE': redefinition; different basic types
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(285,8): error C2371: 'parse_PARAMS': redefinition; different basic types
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(322,16): warning C4013: 'parse_PARAM' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(354,44): error C2065: 'tokenCommaSign': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(354,44): warning C4047: 'function': 'char **' differs in levels of indirection from 'int *'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(354,44): warning C4024: 'tokenByName': different types for formal and actual parameter 2
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(356,79): error C2065: 'tokenCommaSign': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(356,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(356,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 1 of type 'int'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(367,8): error C2371: 'parse_PARAM': redefinition; different basic types
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(367,33): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(370,10): warning C4013: 'PARAM_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(373,38): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(378,37): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(379,14): warning C4013: 'parse_STMT' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(380,20): warning C4013: 'parse_STMT_LIST_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(383,37): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(387,35): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(390,19): warning C4013: 'parse_CONDITION' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(394,39): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(396,22): warning C4013: 'parse_RETURN_STMT_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(399,31): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(401,14): warning C4013: 'parse_VAR_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(406,46): error C2143: syntax error: missing ';' before '{'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(407,15): error C2065: 'token': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(410,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(410,14): warning C4047: '=': 'int' differs in levels of indirection from 'char [4]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(413,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(413,16): warning C4047: '=': 'int' differs in levels of indirection from 'char [6]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(416,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(416,15): warning C4047: '=': 'int' differs in levels of indirection from 'char [5]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(419,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(419,13): warning C4047: '=': 'int' differs in levels of indirection from 'char [3]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(422,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(422,17): warning C4047: '=': 'int' differs in levels of indirection from 'char [7]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(425,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(425,21): warning C4047: '=': 'int' differs in levels of indirection from 'char [11]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(428,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(428,16): warning C4047: '=': 'int' differs in levels of indirection from 'char [6]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(431,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(431,23): warning C4047: '=': 'int' differs in levels of indirection from 'char [13]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(434,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(434,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(437,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(437,9): warning C4129: ',': unrecognized character escape sequence
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(437,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(440,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(440,9): warning C4129: ';': unrecognized character escape sequence
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(440,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(443,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(443,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(446,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(446,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(449,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(449,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(452,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(452,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(455,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(455,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(458,8): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(458,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(461,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(461,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(464,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(464,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(467,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(467,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(470,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(470,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(473,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(473,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(476,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(476,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(479,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(479,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(482,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(482,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(485,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(485,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(488,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(488,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(491,7): error C2065: 'str': undeclared identifier
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(491,29): warning C4047: '=': 'int' differs in levels of indirection from 'char [19]'
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Parsers.c(339): fatal error C1075: '{': no matching token found
+  Token.c
+C:\Users\Itay Cohen\Desktop\compilation\Project1\Token.c(30,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
