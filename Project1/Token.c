@@ -135,3 +135,15 @@ Token *back_token() {
 		return &(currentNode->tokensArray[currentIndex]);
 	}
 
+	void deleteList()
+	{
+		Node* current = headNode->next;
+		Node* next;
+		while (current != NULL)
+		{
+			next = current->next;
+			free(current->tokensArray);
+			free(current);
+			current = next;
+		}
+	}

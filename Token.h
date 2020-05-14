@@ -37,14 +37,7 @@ typedef enum eTOKENS
 	EQUAL_OP,
 	OTHER_ID,
 	EOF_TOK
-	/*
-		Examples of tokens, add/change according to your needs.
-		
-		Alternative way to define tokens:
-		#define TOKEN_INTEGER 1
-		#define TOKEN_IF 2
-		...........
-	*/
+	
 } eTOKENS;
 
 typedef struct Token

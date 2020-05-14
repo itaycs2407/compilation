@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "Token.c"
 
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -15,11 +16,11 @@ int currentIndex;
 Node* currentNode;
 
 
-void match(eTOKENS token, FILE* yyout)
+int match(eTOKENS token, FILE* yyout)
 {
-
 	if (token == currentNode->tokensArray[currentIndex].kind) {
 		current_token = next_token();
+		return 1;
 	}
 	else if (token == EOF_TOK)
 	{
@@ -33,7 +34,25 @@ void match(eTOKENS token, FILE* yyout)
 		fprintf(yyout, "Expected token of type %s at line %d,\n", correctTokenName, current_token->lineNumber);
 		fprintf(yyout, "Actual token of type %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
 		current_token = next_token();
+		return 0;
 	}
+}
+
+
+
+
+void startParsing(yyout) {
+	current_token = getFirstToken();
+	if (current_token != NULL) {
+		parse_PROG(yyout);
+	}
+	match(EOF_TOK, yyout);
+}
+
+Token* getFirstToken() {
+	currentNode = headNode;
+	currentIndex = 0;
+	return &(currentNode->tokensArray[currentIndex]);
 }
 
 
@@ -41,16 +60,17 @@ void parse_PROG(FILE* yyout) {
 	parse_GLOBAL_VARS(yyout);
 	parse_FUNC_PREDEFS(yyout);
 	parse_FUNC_FULL_DEFS(yyout);
-	match(EOF_TOK,yyout);
+
 }
 
 void parse_GLOBAL_VARS(FILE* yyout) {
 	parse_VAR_DEC(yyout);
 	parse_GLOBAL_VARS_(yyout);
 }
-// to be fixed.......
-void GLOBAL_VARS_(FILE* yyout) {
 
+
+// to be fixed.......
+void parse_GLOBAL_VARS_(FILE* yyout) {
 	int followToken[] = { KEY_VOID,KEY_INT,KEY_FLOAT };
 	char* tokenSemiColonSign, * tokenKeyVoid, * tokenKeyInt, * tokenKeyFloat, * currentTokenName;
 	current_token = next_token();
@@ -99,32 +119,74 @@ void parse_VAR_DEC_(FILE* yyout) {
 	}
 }
 
+void errorRecover(int *followArray, int size)
+{
+	Token* searchToken = current_token;
+	while (followArray[size-1] != EOF_TOK && size > 0) {
+		if (followArray[size - 1] != searchToken)
+			size--;
+		else
+		{
+			current_token = searchToken;
+			break;
+		}
+	}
+}
+
 void parse_DIM_SIZES(FILE* yyout) {
+	int followToken[] = { BRACKETS_CLOSE };
+	char* tokenCommaSign, tokenIntNumber, * tokenIntNumberZ, * currentTokenName;
 	fprintf(yyout, "parse_DIM_SIZES' -> int_num DIM_SIZES_ \n");
-	match(KEY_INT, yyout);
+	current_token = next_token();
+	switch (current_token->kind)
+	{
+	case INT_NUMBER:
+	case INT_NUMBER_Z:
+		break;
+	defult:
+		tokenByName(INT_NUMBER, &tokenIntNumber);
+		tokenByName(INT_NUMBER_Z, &tokenIntNumberZ);
+		tokenByName(current_token->kind, &currentTokenName);
+		fprintf(yyout, "Expected token of type %s, %s, %s at line %d,\n", tokenIntNumber, tokenIntNumberZ, current_token->lineNumber);
+		fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
+		errorRecover(followToken, 1);
+	}
 	parse_DIM_SIZES_(yyout);
 }
+		
+		
 
 void parse_DIM_SIZES_(FILE* yyout) {
 	int followToken[] = { BRACKETS_CLOSE };
-	char* tokenCommaSign, * tokenBracketsClose, * currentTokenName;
+	int followIntegerToken[] = { INT_NUMBER ,INT_NUMBER_Z };
+	char* tokenCommaSign, tokenIntNumber,*tokenIntNumberZ, * currentTokenName;
 	switch (current_token->kind)
 	{
 	case COMMA_SIGN:
 		fprintf(yyout, "DIM_SIZES_ -> , int_num DIM_SIZES_ ");
-		match(KEY_INT, yyout);
-		parse_DIM_SIZES_(yyout);
+		current_token = next_token();
+		switch (current_token->kind)
+		{
+		case INT_NUMBER:
+		case INT_NUMBER_Z:
+			break;
+		defult:
+			tokenByName(INT_NUMBER, &tokenIntNumber);
+			tokenByName(INT_NUMBER_Z, &tokenIntNumberZ);
+			tokenByName(current_token->kind, &currentTokenName);
+			fprintf(yyout, "Expected token of type %s, %s, %s at line %d,\n", tokenIntNumber, tokenIntNumberZ, current_token->lineNumber);
+			fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
+			errorRecover(followIntegerToken, 2);
+		}
 		break;
 	case BRACKETS_CLOSE:
 		fprintf(yyout, "DIM_SIZES_ -> epsilon \n");
 		break;
 	default:
 		tokenByName(COMMA_SIGN, &tokenCommaSign);
-		tokenByName(BRACKETS_CLOSE, &tokenBracketsClose);
 		tokenByName(current_token->kind, &currentTokenName);
-		fprintf(yyout, "Expected token of type %s, %s at line %d,\n", tokenCommaSign, tokenBracketsClose, current_token->lineNumber);
+		fprintf(yyout, "Expected token of type %s, %s at line %d,\n", tokenCommaSign,  current_token->lineNumber);
 		fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-		//need to implement//
 		errorRecover(followToken, 1);
 		break;
 	}
@@ -132,16 +194,13 @@ void parse_DIM_SIZES_(FILE* yyout) {
 void parse_TYPE(FILE* yyout) {
 	int followToken[] = { OTHER_ID };
 	char* tokenInt, * tokenFloat, * currentTokenName;
-	current_token = next_token();
 	switch (current_token->kind)
 	{
 	case KEY_INT:
-		
 		current_token = next_token();
 		fprintf(yyout, "TYPE -> int ");
 		break;
 	case KEY_FLOAT:
-		
 		current_token = next_token();
 		fprintf(yyout, "TYPE -> float ");
 		break;
@@ -151,7 +210,6 @@ void parse_TYPE(FILE* yyout) {
 		tokenByName(current_token->kind, &currentTokenName);
 		fprintf(yyout, "Expected token of type %s, %s at line %d,\n", tokenInt, tokenFloat, current_token->lineNumber);
 		fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-		//need to implement//
 		errorRecover(followToken, 1);
 		break;
 	}
@@ -184,7 +242,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type %s, %s, %s , %s, at line %d,\n", tokenSemiColonSign, tokenKeyFloat, tokenKeyVoid, tokenKeyInt ,current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 3);
 				break;
 			}
@@ -615,7 +672,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenFloatNum, tokenParenthesesOpen, tokenZeroNum, tokenParenthesesClose, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -643,7 +699,7 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenParenthesesOpen, tokenIntNum, tokenZeroNum, tokenFloatNum, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
+		
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -673,7 +729,7 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenParenthesesOpen, tokenIntNum, tokenZeroNum, tokenFloatNum, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
+	
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -707,7 +763,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenFloatNum, tokenZeroNum, tokenParenthesesOpen, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -730,7 +785,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type   %s, %s, at line %d,\n", tokenBracketOpen, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -759,7 +813,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenZeroNum, tokenParenthesesOpen, tokenFloatNum, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -783,7 +836,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type  %s, %s, at line %d,\n", tokenCommaSign, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -847,7 +899,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type  %s, %s, %s, %s ,%s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenZeroNum, tokenParenthesesOpen, tokenFloatNum,  current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 				break;
 			}
@@ -880,7 +931,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type  %s, %s, %s, %s ,%s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenZeroNum, tokenParenthesesOpen, tokenFloatNum, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 9);
 			}
 		}
@@ -904,7 +954,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type %s, %s, at line %d,\n", tokenARG_Plus, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 			}
 		}
@@ -933,7 +982,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type  %s, %s, %s, %s ,%s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenZeroNum, tokenParenthesesOpen, tokenFloatNum, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 			}
 		}
@@ -959,7 +1007,6 @@ void parse_TYPE(FILE* yyout) {
 				tokenByName(current_token->kind, &currentTokenName);
 				fprintf(yyout, "Expected token of type  %s, %s, at line %d,\n", tokenARGMulti, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
-				//need to implement//
 				errorRecover(followToken, 1);
 			}
 		}

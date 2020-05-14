@@ -2171,3 +2171,18 @@ int main(int argc, char** argv) {
 }
 
 
+/*To do
+1. lookahead
+2. new main function (with deletelist func.)
+3. CR to parse function
+4. check the CONDITION parser to recover from the inner switch
+5. think about the next token in the parsers (itay);
+6. need the match after the case reul (itay)
+7. parser dim_sizes_
+8. INETNUMBER / Z ISSUE.
+
+
+
+
+
+*/
