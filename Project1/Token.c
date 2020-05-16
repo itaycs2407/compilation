@@ -135,6 +135,16 @@ Token *back_token() {
 		return &(currentNode->tokensArray[currentIndex]);
 	}
 
+	Token* lookAHead(int timesToLook) {
+		
+		Token* tempToken = &currentNode->tokensArray[currentIndex];
+		while (timesToLook > 0 && tempToken->kind != EOF_TOK) {
+			tempToken = next_token();
+			timesToLook--;
+		}
+		return tempToken;
+	}
+
 	void deleteList()
 	{
 		Node* current = headNode->next;

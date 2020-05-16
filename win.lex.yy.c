@@ -2172,14 +2172,21 @@ int main(int argc, char** argv) {
 
 
 /*To do
-1. lookahead
-2. new main function (with deletelist func.)
-3. CR to parse function
-4. check the CONDITION parser to recover from the inner switch
-5. think about the next token in the parsers (itay);
-6. need the match after the case reul (itay)
-7. parser dim_sizes_
-8. INETNUMBER / Z ISSUE.
+1. new main function (with delete list func.)
+2. CR to parse function
+3. parse_FUNC_PREDEFS_ - to ask ran
+
+4. ADD PRINTS TO ALL DUMMY PARSERS - FINISH
+5. parser dim_sizes_ - - FINISH
+6. check the CONDITION parser to recover from the inner switch - FINISH
+7. think about the next token in the parsers (itay); - FINISH
+8. need the match after the case reul (itay) - FINISH
+9. INETNUMBER / Z ISSUE.  - FINISH
+10. GLOBAR VARS - FINISH
+11. lookahead - FINISH
+
+
+
 
 
 
