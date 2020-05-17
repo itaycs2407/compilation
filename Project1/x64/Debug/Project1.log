@@ -1,231 +1,138 @@
-﻿  win.lex.yy.c
-try.lex(130,58): warning C4474: 'fprintf' : too many arguments passed for format string
-try.lex(130,58): message : placeholders and their parameters expect 1 variadic arguments, but 2 were provided
-  Parsers.c
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.h(26,6): error C2061: syntax error: identifier 'isFollow'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.h(26,6): error C2059: syntax error: ';'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.h(26,18): error C2059: syntax error: '<parameter-list>'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(96,15): warning C4013: 'errorRecover' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(105,18): warning C4013: 'parse_DIM_SIZES_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(108,6): error C2371: 'parse_DIM_SIZES_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(161,19): warning C4013: 'parse_PROTOTYPE' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(163,23): warning C4013: 'parse_FUNC_PREDEFS_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(166,8): error C2371: 'parse_FUNC_PREDEFS_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(194,23): warning C4013: 'parse_RETURNED_TYPE' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(197,16): warning C4013: 'parse_PARAMS' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(203,24): warning C4013: 'parse_FUNC_WITH_BODY' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(204,25): warning C4013: 'parse_FUNC_FULL_DEFS_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(207,8): error C2371: 'parse_FUNC_WITH_BODY': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(209,19): warning C4013: 'parse_COMP_STMT' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(212,8): error C2371: 'parse_FUNC_FULL_DEFS_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(242,8): error C2371: 'parse_RETURNED_TYPE': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(264,20): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'char *'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(264,20): warning C4313: 'fprintf': '%d' in format string conflicts with argument 2 of type 'char *'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(264,92): warning C4474: 'fprintf' : too many arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(264,92): message : placeholders and their parameters expect 2 variadic arguments, but 4 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(273,8): error C2371: 'parse_PARAMS': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(311,16): warning C4013: 'parse_PARAM' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(355,8): error C2371: 'parse_COMP_STMT': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(357,23): warning C4013: 'parse_VAR_DEC_LIST_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(358,19): warning C4013: 'parse_STMT_LIST' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(362,8): error C2371: 'parse_VAR_DEC_LIST_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(397,8): error C2371: 'parse_PARAM': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(400,10): warning C4013: 'PARAM_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(408,8): error C2371: 'parse_STMT_LIST': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(409,14): warning C4013: 'parse_STMT' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(410,20): warning C4013: 'parse_STMT_LIST_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(417,19): warning C4013: 'parse_CONDITION' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(423,22): warning C4013: 'parse_RETURN_STMT_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(428,14): warning C4013: 'parse_VAR_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(432,8): error C2371: 'parse_STMT_LIST_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(450,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(450,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 3 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(450,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(450,20): message : placeholders and their parameters expect 4 variadic arguments, but 3 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(450,20): message : the missing variadic argument 4 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(458,8): error C2371: 'parse_STMT': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(465,16): warning C4013: 'parse_STMT_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(485,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(485,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 4 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(485,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(485,20): message : placeholders and their parameters expect 5 variadic arguments, but 4 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(485,20): message : the missing variadic argument 5 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(493,8): error C2371: 'parse_STMT_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(501,15): warning C4013: 'parse_EXPR' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(505,15): warning C4013: 'parse_ARGS' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(530,15): warning C4013: 'parse_MOMO' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(552,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(552,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 6 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(552,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(552,20): message : placeholders and their parameters expect 7 variadic arguments, but 6 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(552,20): message : the missing variadic argument 7 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(561,8): error C2371: 'parse_MOMO': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(580,40): error C2065: 'tokenOtherID': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(580,40): warning C4047: 'function': 'char **' differs in levels of indirection from 'int *'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(580,40): warning C4024: 'tokenByName': different types for formal and actual parameter 2
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(581,41): error C2065: 'tokenIntNum': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(581,41): warning C4047: 'function': 'char **' differs in levels of indirection from 'int *'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(581,41): warning C4024: 'tokenByName': different types for formal and actual parameter 2
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(582,44): error C2065: 'tokenZeroNum': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(582,44): warning C4047: 'function': 'char **' differs in levels of indirection from 'int *'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(582,44): warning C4024: 'tokenByName': different types for formal and actual parameter 2
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(583,45): error C2065: 'tokenFloatNum': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(583,45): warning C4047: 'function': 'char **' differs in levels of indirection from 'int *'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(583,45): warning C4024: 'tokenByName': different types for formal and actual parameter 2
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(584,58): error C2065: 'tokenParenthesesClose': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(584,58): warning C4047: 'function': 'char **' differs in levels of indirection from 'int *'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(584,58): warning C4024: 'tokenByName': different types for formal and actual parameter 2
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,97): error C2065: 'tokenOtherID': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,110): error C2065: 'tokenIntNum': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,125): error C2065: 'tokenFloatNum': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,139): error C2065: 'tokenZeroNum': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,162): error C2065: 'tokenParenthesesClose': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 1 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 3 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 4 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 5 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 5 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 6 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): message : placeholders and their parameters expect 7 variadic arguments, but 6 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(586,20): message : the missing variadic argument 7 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(595,8): error C2371: 'parse_ARGS': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(595,32): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(605,20): warning C4013: 'parse_ARGS_LIST' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(608,20): warning C4566: character represented by universal-character-name '\u025B' cannot be represented in the current code page (1255)
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(626,36): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(637,20): warning C4013: 'parse_ARG_LIST_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(656,36): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(685,8): error C2371: 'parse_RETURN_STMT_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(685,40): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(718,8): error C2371: 'parse_VAR_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(718,32): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(725,20): warning C4013: 'parse_EXPR_LIST' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(733,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(733,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(733,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(733,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(733,20): message : the missing variadic argument 3 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(742,8): error C2371: 'parse_EXPR_LIST': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(742,37): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(753,21): warning C4013: 'parse_EXPR_LIST_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(770,8): error C2371: 'parse_EXPR_LIST_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(770,38): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(786,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(786,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(786,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(786,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(786,20): message : the missing variadic argument 3 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(795,8): error C2371: 'parse_CONDITION': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(795,37): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(836,21): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 7 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(836,21): warning C4313: 'fprintf': '%s' in format string conflicts with argument 7 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(836,21): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(836,21): message : placeholders and their parameters expect 8 variadic arguments, but 7 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(836,21): message : the missing variadic argument 8 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(850,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(850,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 6 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(850,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(850,20): message : placeholders and their parameters expect 7 variadic arguments, but 6 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(850,20): message : the missing variadic argument 7 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(862,8): error C2371: 'parse_EXPR': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(862,32): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(873,15): warning C4013: 'parse_TERM' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(874,16): warning C4013: 'parse_EXPR_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(883,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(883,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 6 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(883,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(883,20): message : placeholders and their parameters expect 7 variadic arguments, but 6 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(883,20): message : the missing variadic argument 7 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(891,8): error C2371: 'parse_EXPR_': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(891,33): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(907,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(907,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(907,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(907,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(907,20): message : the missing variadic argument 3 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(916,8): error C2371: 'parse_TERM': redefinition; different basic types
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(916,32): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(926,17): warning C4013: 'parse_FACTOR' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(927,16): warning C4013: 'pasre_TERM_' undefined; assuming extern returning int
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(936,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(936,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 6 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(936,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(936,20): message : placeholders and their parameters expect 7 variadic arguments, but 6 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(936,20): message : the missing variadic argument 7 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(944,33): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(962,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(962,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(962,20): warning C4473: 'fprintf' : not enough arguments passed for format string
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(962,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(962,20): message : the missing variadic argument 3 is required by format string '%d'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(974,46): error C2143: syntax error: missing ';' before '{'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(975,15): error C2065: 'token': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(978,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(978,14): warning C4047: '=': 'int' differs in levels of indirection from 'char [4]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(981,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(981,16): warning C4047: '=': 'int' differs in levels of indirection from 'char [6]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(984,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(984,15): warning C4047: '=': 'int' differs in levels of indirection from 'char [5]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(987,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(987,13): warning C4047: '=': 'int' differs in levels of indirection from 'char [3]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(990,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(990,17): warning C4047: '=': 'int' differs in levels of indirection from 'char [7]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(993,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(993,21): warning C4047: '=': 'int' differs in levels of indirection from 'char [11]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(996,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(996,15): warning C4047: '=': 'int' differs in levels of indirection from 'char [5]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(999,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(999,23): warning C4047: '=': 'int' differs in levels of indirection from 'char [13]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1002,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1002,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1005,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1005,9): warning C4129: ',': unrecognized character escape sequence
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1005,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1008,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1008,9): warning C4129: ';': unrecognized character escape sequence
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1008,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1011,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1011,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1014,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1014,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1017,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1017,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1020,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1020,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1023,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1023,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1026,8): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1026,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1029,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1029,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1032,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1032,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1035,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1035,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1038,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1038,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1041,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1041,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1044,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1044,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1047,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1047,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1050,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1050,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1053,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1053,19): warning C4047: '=': 'int' differs in levels of indirection from 'char [9]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1056,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1056,20): warning C4047: '=': 'int' differs in levels of indirection from 'char [10]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1059,7): error C2065: 'str': undeclared identifier
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(1059,29): warning C4047: '=': 'int' differs in levels of indirection from 'char [19]'
-C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(564): fatal error C1075: '{': no matching token found
-  Token.c
+﻿  Parsers.c
 C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Token.c(30,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(102,18): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 5 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(102,18): warning C4313: 'fprintf': '%s' in format string conflicts with argument 5 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(102,18): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(102,18): message : placeholders and their parameters expect 6 variadic arguments, but 5 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(102,18): message : the missing variadic argument 6 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(145,43): warning C4047: '!=': 'int' differs in levels of indirection from 'Token *'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(167,42): warning C4047: 'function': 'char **' differs in levels of indirection from 'char *'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(167,42): warning C4024: 'tokenByName': different types for formal and actual parameter 2
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(170,18): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(170,18): warning C4313: 'fprintf': '%s' in format string conflicts with argument 1 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(170,18): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(170,18): warning C4313: 'fprintf': '%s' in format string conflicts with argument 3 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(170,18): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(170,18): message : placeholders and their parameters expect 4 variadic arguments, but 3 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(170,18): message : the missing variadic argument 4 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(166,8): warning C4102: 'defult': unreferenced label
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(157,8): warning C4101: 'tokenCommaSign': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(192,43): warning C4047: 'function': 'char **' differs in levels of indirection from 'char *'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(192,43): warning C4024: 'tokenByName': different types for formal and actual parameter 2
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(195,19): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(195,19): warning C4313: 'fprintf': '%s' in format string conflicts with argument 1 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(195,19): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(195,19): warning C4313: 'fprintf': '%s' in format string conflicts with argument 3 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(195,19): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(195,19): message : placeholders and their parameters expect 4 variadic arguments, but 3 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(195,19): message : the missing variadic argument 4 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(206,18): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(206,18): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(206,18): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(206,18): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(206,18): message : the missing variadic argument 3 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(191,9): warning C4102: 'defult': unreferenced label
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(340,18): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'char *'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(340,18): warning C4313: 'fprintf': '%d' in format string conflicts with argument 2 of type 'char *'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(340,90): warning C4474: 'fprintf' : too many arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(340,90): message : placeholders and their parameters expect 2 variadic arguments, but 4 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(519,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(519,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 3 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(519,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(519,20): message : placeholders and their parameters expect 4 variadic arguments, but 3 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(519,20): message : the missing variadic argument 4 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(553,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 4 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(553,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 4 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(553,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(553,20): message : placeholders and their parameters expect 5 variadic arguments, but 4 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(553,20): message : the missing variadic argument 5 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(619,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(619,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 6 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(619,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(619,20): message : placeholders and their parameters expect 7 variadic arguments, but 6 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(619,20): message : the missing variadic argument 7 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(649,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(649,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 3 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(649,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(649,20): message : placeholders and their parameters expect 4 variadic arguments, but 3 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(649,20): message : the missing variadic argument 4 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(667,20): warning C4013: 'parse_ARGS_LIST' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(670,20): warning C4566: character represented by universal-character-name '\u025B' cannot be represented in the current code page (1255)
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(700,20): warning C4013: 'parse_ARG_LIST_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(691,74): warning C4101: 'tokenParenthesesClose': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(762,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(762,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(762,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(762,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(762,20): message : the missing variadic argument 3 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(812,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(812,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(812,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(812,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(812,20): message : the missing variadic argument 3 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(843,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 6 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(843,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 6 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(843,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(843,20): message : placeholders and their parameters expect 7 variadic arguments, but 6 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(843,20): message : the missing variadic argument 7 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(822,168): warning C4101: 'tokenOPE': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(822,118): warning C4101: 'tokenOPLE': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(822,143): warning C4101: 'tokenOPGE': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(822,156): warning C4101: 'tokenOPG': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(822,131): warning C4101: 'tokenOPL': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(822,180): warning C4101: 'tokenOPNE': unreferenced local variable
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(872,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(872,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(872,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(872,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(872,20): message : the missing variadic argument 3 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(881,15): warning C4013: 'pasre_TERM_' undefined; assuming extern returning int
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(900,20): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(900,20): warning C4313: 'fprintf': '%s' in format string conflicts with argument 2 of type 'int'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(900,20): warning C4473: 'fprintf' : not enough arguments passed for format string
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(900,20): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(900,20): message : the missing variadic argument 3 is required by format string '%d'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(910,14): warning C4047: '=': 'char **' differs in levels of indirection from 'char [4]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(913,16): warning C4047: '=': 'char **' differs in levels of indirection from 'char [6]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(916,15): warning C4047: '=': 'char **' differs in levels of indirection from 'char [5]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(919,13): warning C4047: '=': 'char **' differs in levels of indirection from 'char [3]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(922,17): warning C4047: '=': 'char **' differs in levels of indirection from 'char [7]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(925,21): warning C4047: '=': 'char **' differs in levels of indirection from 'char [11]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(928,15): warning C4047: '=': 'char **' differs in levels of indirection from 'char [5]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(931,23): warning C4047: '=': 'char **' differs in levels of indirection from 'char [13]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(934,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(937,9): warning C4129: ',': unrecognized character escape sequence
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(937,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(940,9): warning C4129: ';': unrecognized character escape sequence
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(940,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(943,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(946,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(949,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(952,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(955,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(958,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(961,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(964,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(967,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(970,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(973,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(976,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(979,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(982,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(985,19): warning C4047: '=': 'char **' differs in levels of indirection from 'char [9]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(988,20): warning C4047: '=': 'char **' differs in levels of indirection from 'char [10]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(991,29): warning C4047: '=': 'char **' differs in levels of indirection from 'char [19]'
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(39): warning C4715: 'match': not all control paths return a value
+Token.obj : error LNK2005: back_token already defined in Parsers.obj
+Token.obj : error LNK2005: create_and_store_token already defined in Parsers.obj
+Token.obj : error LNK2005: deleteList already defined in Parsers.obj
+Token.obj : error LNK2005: lookAHead already defined in Parsers.obj
+Token.obj : error LNK2005: next_token already defined in Parsers.obj
+Token.obj : error LNK2005: headNode already defined in Parsers.obj
+Token.obj : error LNK2005: count already defined in Parsers.obj
+Token.obj : error LNK2005: currentIndex already defined in Parsers.obj
+Token.obj : error LNK2005: currentNode already defined in Parsers.obj
+Parsers.obj : error LNK2019: unresolved external symbol parse_ARGS_LIST referenced in function parse_ARGS
+Parsers.obj : error LNK2019: unresolved external symbol parse_ARG_LIST_ referenced in function parse_ARG_LIST
+Parsers.obj : error LNK2019: unresolved external symbol pasre_TERM_ referenced in function parse_TERM
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\x64\Debug\Project1.exe : fatal error LNK1120: 3 unresolved externals

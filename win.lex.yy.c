@@ -329,7 +329,7 @@ void yyfree ( void *  );
 #define YY_SKIP_YYWRAP
 typedef flex_uint8_t YY_CHAR;
 
-FILE *yyin = NULL, *yyout = NULL;
+FILE *yyin = NULL, *yyout = NULL , *yyout2 = NULL;
 
 typedef int yy_state_type;
 
@@ -2078,6 +2078,10 @@ int CheckFile(char* inputFileName) {
 	yyin = fopen(inputFileName, "r");
 	// open file for output
 	yyout = fopen(outputFileName, "w");
+
+	// TBD - need to fix the flow
+	yyout2 = fopen("c:\temp\syntax.txt", "w");
+
 	// check for file pointers
 	if (yyin == NULL)
 	{
@@ -2091,6 +2095,9 @@ int CheckFile(char* inputFileName) {
 	}
 	// start lexing the file
 	while (yylex() != 0);
+
+	startParsing(yyout2);
+
 
 	// closing file pointers
 	fclose(yyin);
@@ -2184,12 +2191,5 @@ int main(int argc, char** argv) {
 9. INETNUMBER / Z ISSUE.  - FINISH
 10. GLOBAR VARS - FINISH
 11. lookahead - FINISH
-
-
-
-
-
-
-
 
 */

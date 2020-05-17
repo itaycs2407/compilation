@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#endif
 
 extern FILE *yyin, *yyout;
 
@@ -60,4 +61,3 @@ Token* back_token();
 Token* getFirstToken();
 void deleteList();
 
-#endif

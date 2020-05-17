@@ -38,7 +38,7 @@ int match(eTOKENS token, FILE* yyout)
 	}
 }
 
-void startParsing(yyout) {
+void startParsing(FILE* yyout) {
 	current_token = getFirstToken();
 	if (current_token != NULL) {
 		parse_PROG(yyout);
@@ -84,7 +84,7 @@ void parse_GLOBAL_VARS_(FILE* yyout) {
 			parse_VAR_DEC(yyout);
 			parse_GLOBAL_VARS_(yyout);
 			break;
-		defult:
+		default:
 			fprintf(yyout, "GLOBAL_VARS_ -> epsilon \n");
 			current_token = back_token();
 			break;
@@ -93,7 +93,7 @@ void parse_GLOBAL_VARS_(FILE* yyout) {
 	case KEY_VOID:
 		fprintf(yyout, "GLOBAL_VARS_ -> epsilon \n");
 		break;
-	defult:
+	default:
 		tokenByName(KEY_INT, &tokenKeyInt);
 		tokenByName(KEY_FLOAT, &keyFloatToken);
 		tokenByName(SEMICOLON_SIGN, &tokenSemiColonSign);
@@ -208,7 +208,7 @@ void parse_DIM_SIZES_(FILE* yyout) {
 		errorRecover(followToken, 1);
 		break;
 	}
-}
+}/////
 void parse_TYPE(FILE* yyout) {
 	int followToken[] = { OTHER_ID };
 	char* tokenInt, * tokenFloat, * currentTokenName;
@@ -397,7 +397,7 @@ void parse_PARAM_LIST_(FILE* yyout) {
 		errorRecover(followToken, 1);
 		break;
 	}
-}
+}/////
 
 void parse_PARAM_(FILE* yyout) {
 	int followToken[] = { COMMA_SIGN };
@@ -483,7 +483,6 @@ void parse_STMT_LIST(FILE* yyout) {
 	parse_STMT(yyout);
 	parse_STMT_LIST_(yyout);
 }
-
 
 void parse_IF_STMT(FILE* yyout) {
 	fprintf(yyout, "IF_STMT -> if ( CONDITION ) STMT\n");
@@ -585,7 +584,7 @@ void parse_STMT_LIST_(FILE* yyout) {
 				break;
 			}
 		}
-		// will be the factor function
+
 		void parse_FACTOR(FILE* yyout) {
 			int followToken[] = { ARGUMENT_OPR_MULTIPLICATION };
 			char* tokenOtherID, *tokenIntNum, *tokenFloatNum,* tokenZeroNum, * tokenParenthesesClose, * currentTokenName;
@@ -685,33 +684,7 @@ void parse_STMT_LIST_(FILE* yyout) {
 			}
 		}
 
-		void parse_ARG_LIST(FILE* yyout) {
-			int followToken[] = { PARENTHESES_CLOSE };
-			char* tokenOtherID, * tokenIntNum, * tokenFloatNum, * tokenZeroNum, * tokenParenthesesClose, * tokenParenthesesOpen, * currentTokenName;
-			switch (current_token->kind) {
-			case INT_NUMBER:
-			case INT_NUMBER_Z:
-			case OTHER_ID:
-			case PARENTHESES_OPEN:
-			case FLOAT_NUMBER:
-				fprintf(yyout, "ARG_LIST -> EXPR ARG_LIST_");
-				parse_EXPR(yyout);
-				parse_ARG_LIST_(yyout);
-				break;
-			default:
-				tokenByName(OTHER_ID, &tokenOtherID);
-				tokenByName(INT_NUMBER, &tokenIntNum);
-				tokenByName(INT_NUMBER_Z, &tokenZeroNum);
-				tokenByName(PARENTHESES_OPEN, &tokenParenthesesOpen);
-				tokenByName(FLOAT_NUMBER, &tokenFloatNum);
-				tokenByName(current_token->kind, &currentTokenName);
-				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenParenthesesOpen, tokenIntNum, tokenZeroNum, tokenFloatNum, current_token->lineNumber);
-				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
 		
-				errorRecover(followToken, 1);
-				break;
-			}
-		}
 
 		void parse_ARG_LIST(FILE* yyout) {
 			int followToken[] = { PARENTHESES_CLOSE };
@@ -878,8 +851,7 @@ void parse_STMT_LIST_(FILE* yyout) {
 			fprintf(yyout, "EXPR -> TERM EXPR_");
 			parse_TERM(yyout);
 			parse_EXPR_(yyout);
-		}
-			
+		}			
 
 		void parse_EXPR_(FILE* yyout) {
 			int followToken[] = { BRACKETS_CLOSE };
