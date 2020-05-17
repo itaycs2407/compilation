@@ -2080,7 +2080,7 @@ int CheckFile(char* inputFileName) {
 	yyout = fopen(outputFileName, "w");
 
 	// TBD - need to fix the flow
-	yyout2 = fopen("c:\temp\syntax.txt", "w");
+	yyout2 = fopen("c:\\temp\\syntax.txt", "w");
 
 	// check for file pointers
 	if (yyin == NULL)
@@ -2095,7 +2095,11 @@ int CheckFile(char* inputFileName) {
 	}
 	// start lexing the file
 	while (yylex() != 0);
-
+	
+	fprintf(yyout2, "test print");
+	fprintf(yyout2, "test print");
+	fprintf(yyout2, "test print");
+	fprintf(yyout2, "test print");
 	startParsing(yyout2);
 
 

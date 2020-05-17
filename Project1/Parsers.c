@@ -5,15 +5,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Token.c"
 
-#define _CRT_SECURE_NO_WARNINGS
 
 Token* current_token;
-Token* Another_Token;
+//Token* Another_Token;
 
 int currentIndex;
 Node* currentNode;
+
 
 
 int match(eTOKENS token, FILE* yyout)
@@ -46,10 +45,14 @@ void startParsing(FILE* yyout) {
 	match(EOF_TOK, yyout);
 }
 
-Token* getFirstToken() {
-	currentNode = headNode;
-	currentIndex = 0;
-	return &(currentNode->tokensArray[currentIndex]);
+Token* lookAHead(int timesToLook) {
+
+	Token* tempToken = &currentNode->tokensArray[currentIndex];
+	while (timesToLook > 0 && tempToken->kind != EOF_TOK) {
+		tempToken = next_token();
+		timesToLook--;
+	}
+	return tempToken;
 }
 
 void parse_PROG(FILE* yyout) {
@@ -654,37 +657,29 @@ void parse_STMT_LIST_(FILE* yyout) {
 			}
 		}
 
-		void parse_ARGS(FILE* yyout) {
+		void parse_ARG_LIST_(FILE* yyout) {
 			int followToken[] = { PARENTHESES_CLOSE };
-			char* tokenOtherID, * tokenIntNum, * tokenFloatNum, * tokenZeroNum, * tokenParenthesesClose, *tokenParenthesesOpen, * currentTokenName;
-			switch (current_token->kind) {
-			case OTHER_ID:
-			case INT_NUMBER:
-			case INT_NUMBER_Z:
-			case FLOAT_NUMBER:
-			case PARENTHESES_OPEN:
-				fprintf(yyout, "ARGS -> ARG_LIST ");
-				parse_ARGS_LIST(yyout);
+			char*  tokenComma,  * currentTokenName;
+			switch (current_token->kind)
+			{
+			case COMMA_SIGN:
+				fprintf(yyout, "ARG_LIST_ -> , EXPR ARG_LIST_ ");
+				current_token = next_token();
+				parse_EXPR(yyout);
+				parse_ARG_LIST_(yyout);
 				break;
 			case PARENTHESES_CLOSE:
-				fprintf(yyout, "ARGS -> ARG_LIST | ɛ");
+				fprintf(yyout, "ARG_LIST_ -> epsilon ");
 				break;
 			default:
-				tokenByName(OTHER_ID, &tokenOtherID);
-				tokenByName(INT_NUMBER, &tokenIntNum);
-				tokenByName(INT_NUMBER_Z, &tokenZeroNum);
-				tokenByName(PARENTHESES_OPEN, &tokenParenthesesOpen);
-				tokenByName(FLOAT_NUMBER, &tokenFloatNum);
-				tokenByName(PARENTHESES_CLOSE, &tokenParenthesesClose);
+				tokenByName(COMMA_SIGN, &tokenComma);
 				tokenByName(current_token->kind, &currentTokenName);
-				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenFloatNum, tokenParenthesesOpen, tokenZeroNum, tokenParenthesesClose, current_token->lineNumber);
+				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, %s, at line %d,\n", tokenComma, current_token->lineNumber);
 				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
 				errorRecover(followToken, 1);
 				break;
 			}
-		}
-
-		
+			}
 
 		void parse_ARG_LIST(FILE* yyout) {
 			int followToken[] = { PARENTHESES_CLOSE };
@@ -713,6 +708,38 @@ void parse_STMT_LIST_(FILE* yyout) {
 				break;
 			}
 		}
+
+		void parse_ARGS(FILE* yyout) {
+			int followToken[] = { PARENTHESES_CLOSE };
+			char* tokenOtherID, * tokenIntNum, * tokenFloatNum, * tokenZeroNum, * tokenParenthesesClose, *tokenParenthesesOpen, * currentTokenName;
+			switch (current_token->kind) {
+			case OTHER_ID:
+			case INT_NUMBER:
+			case INT_NUMBER_Z:
+			case FLOAT_NUMBER:
+			case PARENTHESES_OPEN:
+				fprintf(yyout, "ARGS -> ARG_LIST ");
+				parse_ARG_LIST(yyout);
+				break;
+			case PARENTHESES_CLOSE:
+				fprintf(yyout, "ARGS -> ARG_LIST | ɛ");
+				break;
+			default:
+				tokenByName(OTHER_ID, &tokenOtherID);
+				tokenByName(INT_NUMBER, &tokenIntNum);
+				tokenByName(INT_NUMBER_Z, &tokenZeroNum);
+				tokenByName(PARENTHESES_OPEN, &tokenParenthesesOpen);
+				tokenByName(FLOAT_NUMBER, &tokenFloatNum);
+				tokenByName(PARENTHESES_CLOSE, &tokenParenthesesClose);
+				tokenByName(current_token->kind, &currentTokenName);
+				fprintf(yyout, "Expected token of type   %s, %s, %s, %s, %s, %s, at line %d,\n", tokenOtherID, tokenIntNum, tokenFloatNum, tokenParenthesesOpen, tokenZeroNum, tokenParenthesesClose, current_token->lineNumber);
+				fprintf(yyout, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
+				errorRecover(followToken, 1);
+				break;
+			}
+		}
+		
+
 
 		void parse_RETURN_STMT_(FILE* yyout) {
 			int followToken[] = { SEMICOLON_SIGN };
@@ -875,12 +902,6 @@ void parse_STMT_LIST_(FILE* yyout) {
 			}
 		}
 
-		void parse_TERM(FILE* yyout) {
-			fprintf(yyout, "TERM -> FACTOR TERM_");
-			parse_FACTOR(yyout);
-			pasre_TERM_(yyout);
-		}
-
 		void parse_TERM_(FILE* yyout) {
 			int followToken[] = { ARGUMENT_OPR_PLUS };
 			char* tokenARGMulti, * currentTokenName;
@@ -889,7 +910,7 @@ void parse_STMT_LIST_(FILE* yyout) {
 				fprintf(yyout, "TERM_ -> * FACTOR TERM_");
 				current_token = next_token();
 				parse_FACTOR(yyout);
-				pasre_TERM_(yyout);
+				parse_TERM_(yyout);
 				break;
 			case ARGUMENT_OPR_PLUS:
 				fprintf(yyout, "TERM_ -> epsilon");
@@ -902,6 +923,12 @@ void parse_STMT_LIST_(FILE* yyout) {
 				errorRecover(followToken, 1);
 			}
 		}
+		void parse_TERM(FILE* yyout) {
+			fprintf(yyout, "TERM -> FACTOR TERM_");
+			parse_FACTOR(yyout);
+			parse_TERM_(yyout);
+		}
+
 
 void tokenByName(eTOKENS token, char* str[]) {
 	switch (token)
