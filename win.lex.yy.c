@@ -2093,6 +2093,15 @@ int CheckFile(char* inputFileName) {
 		printf("Error opening output file for writing...");
 		return 0;
 	}
+
+
+ if (yyout2 == NULL)
+	{
+		printf("Error opening output file for writing...");
+		return 0;
+	}
+
+
 	// start lexing the file
 	while (yylex() != 0);
 	
@@ -2106,6 +2115,7 @@ int CheckFile(char* inputFileName) {
 	// closing file pointers
 	fclose(yyin);
 	fclose(yyout);
+	fclose(yyout2);
 	return 1;
 }
 int PrintMenu() {
