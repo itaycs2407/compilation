@@ -60,5 +60,3 @@ Token* next_token();
 Token* back_token();
 Token* getFirstToken();
 void deleteList();
-
-

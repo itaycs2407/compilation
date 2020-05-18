@@ -4,16 +4,25 @@
 #include "Token.h"
 #endif
 
-/*Function Defenition*/
 
-//Start//
+// Handler Function Defenition 
+
+int match(eTOKENS token, FILE* yyout);
+Token* lookAHead(int num);
+void tokenByName(eTOKENS token, char* str[]);
+Token* getFirstToken();
+void errorRecover(int* followArray, int size);
+
+// Entry point for the parsing process
+
+void startParsing(FILE* yyout);
+
+// Function Defenition
+
 void parse_GLOBAL_VARS(FILE* yyout);
 void parse_PROG(FILE* yyout);
-Token* getFirstToken();
-void startParsing(FILE* yyout);
 void parse_DIM_SIZES_(FILE* yyout);
 void parse_DIM_SIZES(FILE* yyout);
-void errorRecover(int* followArray, int size);
 void parse_VAR_DEC_(FILE* yyout);
 void parse_VAR_DEC(FILE* yyout);
 void parse_GLOBAL_VARS_(FILE* yyout);
@@ -51,10 +60,3 @@ void parse_CONDITION(FILE* yyout);
 void parse_EXPR_LIST_(FILE* yyout);
 void parse_EXPR_LIST(FILE* yyout);
 void parse_VAR_(FILE* yyout);
-
-
-
-/* Handler Function Defenition */
-int match(eTOKENS token, FILE* yyout);
-Token* lookAHead(int num);
-void tokenByName(eTOKENS token, char* str[]);
