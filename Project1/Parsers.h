@@ -7,11 +7,11 @@
 
 // Handler Function Defenition 
 
-int match(eTOKENS token, FILE* yyout);
+int tokenMatcher(eTOKENS token, FILE* yyout);
 Token* lookAHead(int num);
-void tokenByName(eTOKENS token, char* str[]);
+void defineToketToName(eTOKENS token, char* str[]);
 Token* getFirstToken();
-void errorRecover(int* followArray, int size);
+void errorHandler(int* followArray, int size);
 
 // Entry point for the parsing process
 
