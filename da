@@ -1,0 +1,52 @@
+[33m5bda391[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m full working - need to fix line number bug
+[33m8a85dce[m finish working on small file - need to complete main
+[33m22f505a[m in the middle of the test file - stuck on the comma
+[33maa7ad5b[m update by eyal the k1ll3r
+[33m9f0657b[m in debugging - problem with writing to sytax.txt
+[33m6d7490c[m before debugging
+[33md7ea040[m finish again all the parsers, need to complete main func
+[33m83f5def[m fix som parser and add list to ran
+[33m8c97648[m finish all parsersgit add .!
+[33m412c5ba[m continue with the parse functions
+[33mce3989e[m finish arraniging all the files
+[33mea4dd85[m Delete Kompilazia-Grammer.docx
+[33md35e31b[m Delete Token.h
+[33mbb4bbe3[m Delete Token.c
+[33m15c6584[m Delete Project1.vcxproj.user
+[33m102b7e4[m Delete Project1.vcxproj.filters
+[33m4076535[m Delete Project1.vcxproj
+[33m218d139[m Delete Parsers.h
+[33mbacfa02[m Delete Parsers.c
+[33m0b0511a[m Delete win.lex.yy.obj
+[33mdf850eb[m Delete vc141.pdb
+[33m4fdd27e[m Delete vc141.idb
+[33mf62367d[m Delete Token.obj
+[33m767876d[m Delete Project1.log
+[33mdb27c3e[m Delete link.write.1.tlog
+[33m97281fc[m Delete link.read.1.tlog
+[33mc6a2b60[m Delete link.command.1.tlog
+[33m6b4ca52[m Delete Project1.lastbuildstate
+[33m5ac28d4[m Delete CL.write.1.tlog
+[33m16af37c[m Delete CL.read.1.tlog
+[33mfd33afc[m Delete CL.command.1.tlog
+[33m9e4cfb3[m Delete win.lex.yy.c
+[33mb1d9152[m Delete try.lex
+[33m76c10f8[m Delete information.txt
+[33ma11909e[m Delete Token.h
+[33m0ed91ac[m Delete Project1.sln
+[33m746f89f[m Delete Project1.pdb
+[33m9af7c4b[m Delete Project1.ilk
+[33mde36934[m update
+[33m1537beb[m Add files via upload
+[33m33e1285[m Add files via upload
+[33m8254fa0[m Add files via upload
+[33m0bfbd22[m Matala-2-etchalnu
+[33m6593d46[m grammer
+[33me86ab0b[m after fix from comments in the module + EOF sign
+[33m36f06cd[m ALL OK - READY TO SEND THE FIRST ASSIGNMENT
+[33md972ee5[m AFTER REG_EXP NAMES CHANGED - WORKINGgit add .!
+[33m691df28[m files from eyal
+[33m6e6ee2d[m added info.txt
+[33m5e2f0ce[m finish working on main - with creating output file name
+[33m7b9ebed[m after 2nd white night, need to fix menu
+[33m9406f71[m initial files after the white night

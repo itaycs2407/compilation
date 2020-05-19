@@ -253,7 +253,7 @@ void parse_VAR_DEC_(FILE* file) {
 void parse_DIM_SIZES(FILE* file) {
 	int followToken[] = { BRACKETS_CLOSE };
 	char* tokenCommaSign, tokenIntNumber, * tokenIntNumberZ, * currentTokenName;
-	fprintf(file, "parse_DIM_SIZES' -> int_num DIM_SIZES_ \n");
+	fprintf(file, "parse_DIM_SIZES -> int_num DIM_SIZES_ \n");
 	current_token = next_token();
 	switch (current_token->kind)
 	{
@@ -374,7 +374,7 @@ void parse_FUNC_PREDEFS_(FILE* file) {
 		defineToketToName(SEMICOLON_SIGN, &tokenSemiColonSign);
 		defineToketToName(CURLY_BRACES_OPEN, &tokenCurlyOpen);
 		defineToketToName(current_token->kind, &currentTokenName);
-		fprintf(file, "Expected token of type %s, %s, %s , %s, at line %d,\n", tokenSemiColonSign, tokenCurlyOpen, tokenKeyFloat, tokenKeyVoid, tokenKeyInt ,current_token->lineNumber);
+		fprintf(file, "Expected token of type %s, %s, %s , %s ,%s, at line %d\n", tokenSemiColonSign, tokenCurlyOpen, tokenKeyFloat, tokenKeyVoid, tokenKeyInt ,current_token->lineNumber);
 		fprintf(file, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
 		errorHandler(followToken, 3);
 		break;
@@ -479,7 +479,7 @@ void parse_PARAMS(FILE* file) {
 		defineToketToName(PARENTHESES_CLOSE, &tokenParentesesClose);
 		defineToketToName(KEY_FLOAT, &tokenFloat);
 		defineToketToName(current_token->kind, &currentTokenName);
-		fprintf(file, "Expected token of type %s, %s, %s, at line %d,\n", tokenInt, tokenFloat, tokenParentesesClose, current_token->lineNumber);
+		fprintf(file, "Expected token of type %s, %s, %s, at line %d\n", tokenInt, tokenFloat, tokenParentesesClose, current_token->lineNumber);
 		fprintf(file, "Actual token: %s, lexeme:\'\'%s\'\'\n", currentTokenName, current_token->lexeme);
 		errorHandler(followToken, 1);
 		break;
