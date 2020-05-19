@@ -2064,23 +2064,36 @@ int CheckFile(char* inputFileName) {
 #define NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME  100
 	// build the output filename with the prefix of the input name
 	int i = 0, j = 0;
-	char* addition = "_066524737_302788781_204072524_lex_output.txt";
+	
+	char* additionLex = "_066524737_302788781_204072524_lex_output.txt";
+	char* additionSyntax = "_066524737_302788781_204072524_synatx_output.txt";
+	
 	char outputFileName[NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME];
+	char outputFileNameSytax[NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME];
 	strcpy(outputFileName, inputFileName);
+	strcpy(outputFileNameSytax, inputFileName);
+	
 	while (outputFileName[i] != '.') {
 		i++;
 	}
-	while (i < i + strlen(addition) && (i < NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME)) {
-		outputFileName[i++] = addition[j++];
+	while (i < i + strlen(additionLex) && (i < NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME)) {
+		outputFileName[i++] = additionLex[j++];
 	}
-
+	i = 0;
+	j = 0;
+	while (outputFileNameSytax[i] != '.') {
+		i++;
+	}
+	while (i < i + strlen(additionSyntax) && (i < NUM_OF_CHARS_FOR_STRING_FOR_OUTPUT_FILENAME)) {
+		outputFileNameSytax[i++] = additionSyntax[j++];
+	}
 	// open file pointer for read
 	yyin = fopen(inputFileName, "r");
 	// open file for output
 	yyout = fopen(outputFileName, "w");
 
 	// TBD - need to fix the flow
-	yyout2 = fopen("c:\\temp\\syntax.txt", "w");
+	yyout2 = fopen(outputFileNameSytax, "w");
 
 	// check for file pointers
 	if (yyin == NULL)
@@ -2104,13 +2117,7 @@ int CheckFile(char* inputFileName) {
 
 	// start lexing the file
 	while (yylex() != 0);
-	
-	fprintf(yyout2, "test print");
-	fprintf(yyout2, "test print");
-	fprintf(yyout2, "test print");
-	fprintf(yyout2, "test print");
 	startParsing(yyout2);
-
 
 	// closing file pointers
 	fclose(yyin);
@@ -2166,7 +2173,7 @@ int main(int argc, char** argv) {
 	case 3: {
 		printf("Start lexing file: c:\\temp\\test1.txt ..... please wait \n");
 		if (CheckFile("c:\\temp\\test1.txt")) {
-			printf("The output file is ready, located in c:\\temp....\n");
+			printf("The output file is ready, located in c:\\temp.  \n");
 		}
 		else
 		{
@@ -2190,20 +2197,3 @@ int main(int argc, char** argv) {
 	}
 
 }
-
-
-/*To do
-1. new main function (with delete list func.)
-2. CR to parse function
-3. parse_FUNC_PREDEFS_ - to ask ran
-
-4. ADD PRINTS TO ALL DUMMY PARSERS - FINISH
-5. parser dim_sizes_ - - FINISH
-6. check the CONDITION parser to recover from the inner switch - FINISH
-7. think about the next token in the parsers (itay); - FINISH
-8. need the match after the case reul (itay) - FINISH
-9. INETNUMBER / Z ISSUE.  - FINISH
-10. GLOBAR VARS - FINISH
-11. lookahead - FINISH
-
-*/
