@@ -1,0 +1,32 @@
+﻿  Generating code
+  Previous IOBJ not found, fall back to full compilation.
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(35): warning C4715: 'tokenMatcher': not all control paths return a value
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpL' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpGE' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpG' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpNE' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenComma' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenParentesisClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenSemiColon' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenBracketsClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenCurlyClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpL' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpGE' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpG' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpNE' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenComma' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenParentesisClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenSemiColon' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenBracketsClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenCurlyClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpGE' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpLE' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpL' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpG' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenOpE' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenSemiColon' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenCurlyClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenComma' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+C:\Users\Itay Cohen\Desktop\לימודים\שנה ג\סמסטר ב\קומפילציה\מטלה 2\compilation\Project1\Parsers.c(150): error C4789: buffer 'tokenParentesisClose' of size 1 bytes will be overrun; 8 bytes will be written starting at offset 0
+  All 75 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+LINK : fatal error LNK1257: code generation failed

@@ -9,10 +9,10 @@ Students names:
 3. Ahikam Partush
 
 Operating system:
-Windows7 - 64Bit
+Windows10 - 64Bit
 
 Development enviroment:
-Visual Studio 17
+Visual Studio 19
 
 Notes: none.
 

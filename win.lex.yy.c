@@ -2124,6 +2124,7 @@ int CheckFile(char* inputFileName) {
 	fclose(yyout);
 	fclose(yyout2);
 	return 1;
+	system("pause");
 }
 int PrintMenu() {
 	int inputFromUser = 0;
